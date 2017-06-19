@@ -363,8 +363,10 @@ else
 	if [ ! -f "${tmpdir}/linuxgsm.sh" ]; then
 		fn_fetch_file_github "" "linuxgsm.sh" "${tmpdir}" "chmodx" "norun" "noforcedl" "nomd5"
 	fi
-	getopt=$1
-	core_getopt.sh
+	
+	# Travis
+	# getopt=$1
+	# core_getopt.sh
 fi
 
 fn_currentstatus_tmux(){
